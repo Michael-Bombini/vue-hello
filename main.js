@@ -12,8 +12,13 @@ const appVue = new Vue({
     //titolo h1 e image source ricavata con v-bind
     data: {
       titolo : "H1 Hello VUE",
-      image : "https://picsum.photos/200/300",
+      image : "https://picsum.photos/300/300",
     },
   
+    methods: {
+      genera : function(){
+        this.image = "https://picsum.photos/300/300";
+      }
+    }
  
   });

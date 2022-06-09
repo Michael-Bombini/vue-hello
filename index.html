@@ -12,8 +12,11 @@
 <body>
     
     <div id="app">
-        <h1>{{titolo}}</h1>
-        <img v-bind:src="image" alt="">
+        <div class="container text-center">
+            <h1>{{titolo}}</h1>
+            <img v-bind:src="image" alt="">
+            <button class="btn btn-primary d-block m-auto my-5" @click="genera">Nuova Immagine</button>
+        </div>
     </div>
 
 
