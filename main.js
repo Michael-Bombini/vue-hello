@@ -13,11 +13,14 @@ const appVue = new Vue({
     data: {
       titolo : "H1 Hello VUE",
       image : "https://picsum.photos/300/300",
+      id: Math.floor(Math.random() * 500),
     },
   
     methods: {
       genera : function(){
-        this.image = "https://picsum.photos/300/300";
+        
+        this.image = `https://picsum.photos/id/${this.id}/300/300`;
+        this.id = Math.floor(Math.random() * 500);
       }
     }
  
